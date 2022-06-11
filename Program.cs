@@ -1,6 +1,5 @@
-﻿var array = new Stack<int>();
+var array = new Stack<int>(Enumerable.Range(0, Convert.ToInt32(Console.ReadLine())).Select(i => i++).ToArray());
 
-for (int i = 0; i < Convert.ToInt32(Console.ReadLine()); i++) array.Push(i + 1);
 var arraySumSquared = array.Sum() * array.Sum();
 
 var squareSum = 0;
